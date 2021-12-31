@@ -6,7 +6,7 @@ public class Insertion_Sort {
 		int[] array = { 22, 27, 16, 2, 18, 6 };
 
 		insertionSort(array);
-		System.out.println(java.util.Arrays.toString(array));
+		//System.out.println(java.util.Arrays.toString(array));
 	}
 
 	// metodumuzu tanımlıyoruz.
