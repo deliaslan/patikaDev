@@ -4,7 +4,7 @@ public class Insertion_Sort {
 	public static void main(String[] args) {
 		// Dizimizi tanımlıyoruz
 		int[] array = { 22, 27, 16, 2, 18, 6 };
-
+		
 		insertionSort(array);
 		//System.out.println(java.util.Arrays.toString(array));
 	}
