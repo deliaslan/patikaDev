@@ -7,3 +7,5 @@
 - git stash pop ile değişiklikleri uygular ve stashteki kaydı sileriz
 - git stash apple stash{0} gibi bir kullanım ile değişikliğin seçileceği stashi seçeriz ve uygularız.
 - Yalnız stash apply stashteki tutulan kaydı silmez.
+
+
