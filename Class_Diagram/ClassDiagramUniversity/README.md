@@ -12,4 +12,4 @@ Bu sistemi tasvir eden Class (Sınıf) diyagramını çiziniz.
 
 Not : Sınıflara ait nitelik ve davranışların belirtilmesine gerek yoktur.
 
-![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Class_Diagram/Class%20Diagram0-University.jpg?raw=true)
+![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Class_Diagram/ClassDiagramUniversity/Class%20Diagram0-University.jpg?raw=true)
