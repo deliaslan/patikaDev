@@ -1,8 +1,15 @@
-## UITextField
-#### UITextField kullanımına ait çalışma
+## UIActivityIndicator
+#### UIActivityIndicator kullanımına ait çalışma
 
-Yapılan çalışmada textfield alanından okunan verinin konsola yazdırılmasını gerçekleştirdik.
-Eğer textfield alanları boş ise describe ya ?? Operatörü ile nasıl manipüle yapabiliriz bunlara göz attık. (Optional olayını ilerde daha ayrıntılı inceleyeceğiz sanırım.)
+Yapılan çalışmada ActivityIndicator ın ne amaçla ve nasıl kullanıldığını anlamaya çalıştık. Ayrıca demo bir login işlemi simülasyonu oluşturarak bu koşullar altında nasıl çalışacağını belirlemeye çalıştık.
 
 
-![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UITextField/login_screen.png?raw=true)
+![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UIActivityIndicator/screen%20shots/1.png?raw=true)
+
+![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UIActivityIndicator/screen%20shots/2.png?raw=true)
+
+![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UIActivityIndicator/screen%20shots/3.png?raw=true)
+
+![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UIActivityIndicator/screen%20shots/4.png?raw=true)
+
+![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UIActivityIndicator/screen%20shots/5.png?raw=true)
