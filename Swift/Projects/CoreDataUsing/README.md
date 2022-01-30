@@ -5,6 +5,24 @@ Burada aynı proje bağımsız olması açısından(branch yapmadan) aşama aşa
 Core Data veritabanı üzerinden ekleme, silme, güncelleme ve tümünü silme işlemleri gerçekleştirilebilmektedir.
 Uygulamaya ait ekran görüntüleri paylaşılmıştır.
 
-![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UIAlertController/screen%20shots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-27%20at%2023.53.32.png?raw=true)
+### NOT: Bu uygulama patikaDEV üzerindeki eğitimler eşliğinde yapılmıştır.
 
-![Sınıf Diyagramı Çizimi](https://github.com/deliaslan/patikaDev/blob/main/Swift/UIAlertController/screen%20shots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-27%20at%2023.53.38.png?raw=true)
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.04.50.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.05.46.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.06.21.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.06.25.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.06.34.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.06.37.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.06.41.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.06.48.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.07.14.png?raw=true)
+
+![Ekran](https://github.com/deliaslan/patikaDev/blob/main/Swift/Projects/CoreDataUsing/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-01-31%20at%2000.07.18.png?raw=true)
