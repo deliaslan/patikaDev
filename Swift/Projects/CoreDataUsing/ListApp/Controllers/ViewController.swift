@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        fetch()
+        self.fetch(entity: "ListItem")
         
         
         
@@ -63,7 +63,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
             
             try? managedObjectContext?.save()
             
-            self.fetch()
+            self.fetch(entity: "ListItem")
             
         }
         
@@ -116,23 +116,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         presentAddAlert()
     }
     
-    
     //leftBarButtonItem remove all
     @IBAction func didRemoveButtonItemTapped(_ sender: UIBarButtonItem){
         
         presentAlert(title: "Uyarı!",
-                     message: "Tüm elemanları listeden silme veritabanı kodu sonra eklenmek üzere bırakıldı? Diğer kısımlar çalışmaktadır.",
-                     defaultButtonTitle: "Okudum",
-                     cancelButtonTitle: "Okudum"
-        ) { _ in
+                     message: "Tüm elemanları listeden silmek istediğinize emin misiniz?",
+                     defaultButtonTitle: "Tümünü Sil",
+                     cancelButtonTitle: "Vazgeç"
+        ){ _ in
             
-            
-            
-            //            self.data.removeAll()
-            //            self.tableView.reloadData()
-            
-            
-            //COREDATA REMOVEALLITEM ENTITY
+            //Tüm elemanları sileceğimiz fonksiyon
+            self.deleteAllData(entity: "ListItem")
             
         }
     }
@@ -165,7 +159,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
                 try? managedObjectContext?.save()
                 
                 //aşağıdaki kod ile datayı yeniliyoruz ekranda
-                self.fetch()
+                self.fetch(entity: "ListItem")
             }
             else
             {
@@ -175,7 +169,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func presentWarningAlert(){
-        
         
         presentAlert(title: "Uyarı!",
                      message: "Liste elemanı boş olamaz.",
@@ -216,17 +209,42 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         present(alertController, animated: true)
     }
     
-    func fetch() {
+    func fetch(entity: String) {
         //Veritabanındaki  bilginin ekrana gelmesi için veriyi çekme işlemi
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         let managedObjectContext = appDelegate?.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>.init(entityName: "ListItem")
+        let fetchRequest = NSFetchRequest<NSManagedObject>.init(entityName: entity)
         
         data =  try! managedObjectContext!.fetch(fetchRequest)
         
         tableView.reloadData()
     }
     
+    func deleteAllData(entity: String) {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entity)
+        fetchRequest.returnsObjectsAsFaults = false
+        
+        do
+        {
+            let results = try managedObjectContext.fetch(fetchRequest)
+            for managedObject in results
+            {
+                let managedObjectData:NSManagedObject = managedObject
+                managedObjectContext.delete(managedObjectData)
+                print("Deleted")
+            }
+            
+        } catch let error as NSError {
+            print(error)
+        }
+        
+        try? managedObjectContext.save()
+        self.fetch(entity: "ListItem")
+        
+    }
     
 }
 
